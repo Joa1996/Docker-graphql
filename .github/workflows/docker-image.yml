@@ -33,7 +33,7 @@ jobs:
     #Hacemos el push
     - name: Push Docker Image
       run: |
-          docker push -t 2019911/docker-graphql:0.0.2 .
+          docker push  2019911/docker-graphql:0.0.2 
 
 
 
