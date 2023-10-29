@@ -37,13 +37,13 @@ jobs:
     #Build la Imagen
     - name: Build Docker Image
       env:
-          NEW_VERSION: ${{ steps.version.outputs.version }
+          NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
           docker build -t 2019911/docker-graphql:$NEW_VERSION .
     #Hacemos el push
     - name: Push Docker Image
       env:
-          NEW_VERSION: ${{ steps.version.outputs.version }
+          NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
           docker push  2019911/docker-graphql:$NEW_VERSION 
 
